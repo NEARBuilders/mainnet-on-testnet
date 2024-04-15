@@ -1,4 +1,8 @@
-# Quickstart
+# mainnet-on-testnet
+
+Provides testnet deployments of requested NEAR Accounts.
+
+Uses [bos-workspace](https://github.com/NEARBuilders/bos-workspace).
 
 ## Getting started
 
