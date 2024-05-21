@@ -4,18 +4,11 @@ Provides testnet deployments of requested NEAR Accounts.
 
 Uses [bos-workspace](https://github.com/NEARBuilders/bos-workspace).
 
-## Getting started
+## Request a testnet deploy
 
-1. Install packages
+To request an account's mainnet widgets to be deployed to "mainnet-on.testnet", create a pull request with the following changes:
 
-```cmd
-yarn install
-```
-
-2. Start dev environment
-
-```cmd
-yarn run dev
-```
-
-This will start a gateway at [127.0.0.1:8080](http://127.0.0.1:8080) which will render your local widgets. The entry point for this app is [quickstart.near/widget/app](http://127.0.0.1:8080/quickstart.near/widget/greeting)
+1. From the root, clone the mainnet `yarn bw clone [mainnet account] ./apps`
+2. Modify the `bos.config.json` to track aliases from the root directory, and configure the testnet override account to be "mainnet-on.testnet"
+3. Create a new release workflow in `.github/workflows` for deploying the added "app"
+4. Add the added account to the mainnet and testnet alias jsons -- testnet will be "mainnet-on.testnet", mainnet will be the linked account

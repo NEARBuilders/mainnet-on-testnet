@@ -1,0 +1,15 @@
+{
+  "account": "nearui.near",
+  "aliases": ["../../aliases.mainnet.json"],
+  "ipfs": {
+    "gateway": "https://ipfs.near.social/ipfs",
+    "uploadApi": "https://ipfs.near.social/add",
+    "uploadApiHeaders": {}
+  },
+  "overrides": {
+    "testnet": {
+      "account": "mainnet-on.testnet",
+      "aliases": ["../../aliases.testnet.json"]
+    }
+  }
+}
